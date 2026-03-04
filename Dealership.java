@@ -12,6 +12,7 @@ public class Dealership {
         // TODO: Loop through inventory. 
         for(Vehicle car: inventory)
         {
+            car.drive(50);
         // TODO: If a vehicle is an ElectricCar, check if it needs a charge.
             if(car instanceof ElectricCar)
             {
