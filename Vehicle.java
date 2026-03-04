@@ -8,10 +8,14 @@ public class Vehicle {
      */
     public Vehicle(String model) {
         // TODO: Initialize variables
+        mileage = 0;
+        engineRunning = false;
+        model = "";
     }
 
     public void startEngine() {
         // TODO: Set engineRunning to true
+        engineRunning = true;
     }
 
     /**
@@ -19,10 +23,15 @@ public class Vehicle {
      */
     public void drive(int distance) {
         // TODO: Logic to add distance only if engineRunning is true
+        distance = 0;
+        if(engineRunning)
+            distance++;
     }
-
     public String toString() {
         // TODO: Return model, mileage, and status
-        return "";
+        if(engineRunning)
+            return "You are driving a " + model +". It has " + mileage + " miles. The engine is running.";
+        else
+            return "You are driving a " + model +". It has " + mileage + " miles. The engine is not running.";
     }
 }
