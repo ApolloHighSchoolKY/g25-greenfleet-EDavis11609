@@ -10,7 +10,12 @@ public class Vehicle {
         // TODO: Initialize variables
         mileage = 0;
         engineRunning = false;
-        model = "";
+        this.model = model;
+    }
+
+    public int getMileage()
+    {
+        return mileage;
     }
 
     public void startEngine() {

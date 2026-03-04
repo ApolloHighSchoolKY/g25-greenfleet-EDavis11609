@@ -4,7 +4,7 @@ public class ElectricCar extends Vehicle {
     public ElectricCar(String model) {
         // TODO: Use super() to set the model
         // TODO: Set batteryPercent to 100.0
-        super(0,false,model);
+        super(model);
         batteryPercent = 100.0;
     }
     /**
@@ -25,5 +25,9 @@ public class ElectricCar extends Vehicle {
     }
     public void charge() {
         batteryPercent = 100.0;
+    }
+    public double getBattery()
+    {
+        return batteryPercent;
     }
 }
